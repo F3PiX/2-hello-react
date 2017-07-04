@@ -8,6 +8,7 @@ class HelloWorld extends React.Component {
       <div className="shoutContainer">
         <Shout />
         <Talk message="Please answer me. We need you over here."/>
+        {/*<Talk message={this.props.messages[1]}/>*/}
         <Time />
         <LikeButton />
       </div>)
