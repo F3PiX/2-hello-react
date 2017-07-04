@@ -2,13 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
+const messages = ["ok", "boo", ":wave:"];
+
 class HelloWorld extends React.Component {
   render() {
     return (
       <div className="shoutContainer">
         <Shout />
-        <Talk message="Please answer me. We need you over here."/>
-        {/*<Talk message={this.props.messages[1]}/>*/}
+        <Talk messages={messages}/>
         <Time />
         <LikeButton />
       </div>)
@@ -21,7 +22,7 @@ function Shout () {
 
 function Talk(props) {
   return <div>
-    <p style={{color: "#31b048"}}>{props.message}</p>
+    <p style={{color: "#31b048"}}>{messages[0]}</p>
   </div>
 }
 
