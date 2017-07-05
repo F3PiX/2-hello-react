@@ -29,11 +29,9 @@ function Shout () {
   return <div><h1> Hello World Peace....!!!</h1></div>
 }
 
-function Talk({message}) {
-  return <div>
+const Talk = ({message}) => (
     <p style={{color: "#31b048"}}>{message} ({shuffled})</p>
-  </div>
-}
+)
 
 const Time = () => {
   return <span className="time"> 3h ago</span>
