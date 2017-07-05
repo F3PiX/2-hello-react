@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
+import MessageBox from './message_box';
 
 const messages = [
   {name: "ok", message: "Everything is A-OK"},
@@ -22,6 +23,7 @@ class HelloWorld extends React.Component {
         <Talk message={message} />
         <Time />
         <LikeButton />
+        <MessageBox />
       </div>)
   }
 }
